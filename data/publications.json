@@ -1,0 +1,63 @@
+{
+  "categories": [
+    {
+      "type": "preprints",
+      "title": "Preprints",
+      "items": [
+        {
+          "authors": "<b>X. Tong</b>, L. Lei, A. Li, A. Swindlehurst and S. Chatzinotas",
+          "title": "Optimal Interference Exploitation Waveform Design with Relaxed Block-Level Power Constraints",
+          "date": "2026",
+          "main_link": "https://arxiv.org/abs/2508.04046",
+          "links": []
+        }
+      ]
+    },
+    {
+      "type": "journal_articles",
+      "title": "Journal Articles",
+      "items": [
+        {
+          "authors": "<b>X. Tong</b>, A. Li, L. Lei, X. Hu, F. Dong, S. Chatzinotas and C. Masouros",
+          "title": "MU-MIMO Symbol-Level Precoding for QAM Constellations with Maximum Likelihood Receivers",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 73, no. 12, pp. 15098-15112",
+          "date": "Dec. 2025",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11187410"
+        },
+        {
+          "authors": "<b>X. Tong</b>, A. Li, L. Lei, F. Liu and F. Dong",
+          "title": "Symbol-Level Precoding for MU-MIMO System With RIRC Receiver",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 72, no. 5, pp. 2820-2834",
+          "date": "May 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10375576/authors#authors"
+        },
+        {
+          "authors": "A. Salem, <b>X. Tong</b>, A. Li and C. Masouros",
+          "title": "NOMA Made Practical: Removing the Receive SIC Processing Through Interference Exploitation",
+          "journal": "IEEE Open Journal of the Communications Society",
+          "status": "vol. 5, pp. 2723-2734",
+          "date": "2024",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/10508205"
+        },
+        {
+          "authors": "<b>X. Tong</b>, X. Li, W. Wang, F. Wang and A. Li",
+          "title": "Secrecy rate optimization for dual-functional radar-communication system with energy receiver",
+          "journal": "Transactions on Emerging Telecommunications Technologies",
+          "status": "",
+          "date": "2022",
+          "main_link": "https://doi.org/10.1002/ett.4617"
+        },
+        {
+          "authors": "<b>X. Tong</b>, X. Li, W. Wang and F. Wang",
+          "title": "Secrecy rate optimization for ISAC-UAV system via joint trajectory and power control",
+          "journal": "IEICE Communications Express",
+          "status": "vol. 11, pp. 417-422",
+          "date": "2022",
+          "main_link": "https://doi.org/10.1587/comex.2022XBL0038"
+        }
+      ]
+    }
+  ]
+}

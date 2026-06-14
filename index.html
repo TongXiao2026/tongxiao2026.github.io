@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJH79M478S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJH79M478S');
+    </script>
+    <meta charset="UTF-8">
+
+    <script>
+
+        // 即时主题初始化 (需在所有CSS加载前执行)
+        (function () {
+            // 优先使用sessionStorage，其次系统偏好
+            const sessionTheme = sessionStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            document.documentElement.setAttribute('data-theme',
+                sessionTheme || (systemDark ? 'dark' : 'light')
+            );
+
+            // 初始化后添加过渡效果
+            setTimeout(() => {
+                document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+            }, 10);
+        })();
+    </script>
+
+
+    <!-- Meta tags for search engines to crawl -->
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Xiao Tong; 佟晓; Xi'an Jiaotong University">
+    <script src="assets/js/scroll_animation.js"></script>
+    <script src="assets/js/dark_mode.js"></script>
+    <link rel="stylesheet" href="assets/css/scroll_animation.css">
+    <link rel="stylesheet" href="assets/css/dark_mode_button.css">
+    <link rel="author" href="https://tongxiao2026.github.io/">
+
+    <title>Xiao Tong - Homepage</title>
+    <style>
+        @media screen and (max-device-width: 480px) {
+            body {
+                -webkit-text-size-adjust: none;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 8px 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 16px;
+            background-color: rgb(224, 224, 224);
+        }
+
+        .title {
+            width: 650px;
+            margin: 20px auto;
+        }
+
+        .container {
+            width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            clear: both;
+        }
+
+        .container_title {
+            max-width: 750px;
+            width: calc(100% - 32px);
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            clear: both;
+        }
+
+        .iframe_video {
+            float: left;
+            margin-right: 30px
+        }
+
+        #bio {
+            padding-top: 0px;
+        }
+
+        #me {
+            border: 0 solid black;
+            display: block;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        #sidebar {
+            margin-left: 25px;
+            margin-right: 50px;
+            border: 0 solid black;
+            float: left;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a,
+        a:visited {
+            color: #0050e7;
+        }
+
+        .publogo {
+            width: 100px;
+            margin-right: 20px;
+            float: left;
+            border: 0;
+        }
+
+        .publication {
+            clear: left;
+            padding-bottom: 0px;
+        }
+
+        .publication p {
+            height: 100px;
+            padding-top: 5px;
+        }
+
+        .publication strong a {
+            color: #0000A0;
+        }
+
+        .publication .links {
+            position: relative;
+            top: 15px
+        }
+
+        .publication .links a {
+            margin-right: 20px;
+        }
+
+        .codelogo {
+            margin-right: 10px;
+            float: left;
+            border: 0;
+        }
+
+        .code {
+            clear: left;
+            padding-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        .code .download a {
+            display: block;
+            margin: 0 15px;
+            float: left;
+        }
+
+        .code strong a {
+            color: #000;
+        }
+
+        .external a {
+            margin: 0 10px;
+        }
+
+        .external a.first {
+            margin: 0 10px 0 0;
+        }
+
+        .date {
+            width: 13%;
+            vertical-align: top;
+        }
+
+        .mono_font {
+            font-family: ui-monospace,
+                Menlo, Monaco,
+                "Cascadia Mono", "Segoe UI Mono",
+                "Roboto Mono",
+                "Oxygen Mono",
+                "Ubuntu Mono",
+                "Source Code Pro",
+                "Fira Mono",
+                "Droid Sans Mono",
+                "Consolas", "Courier New", monospace;
+        }
+
+        /* dark mode css */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333;
+            --container-bg: #ffffff;
+            --link-color: #4A6CD4;
+            --body-bg: #e0e0e0;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #EEE;
+            --container-bg: #2d2d2d;
+            --link-color: #7D9FFF;
+            --body-bg: #121212;
+        }
+
+        html {
+            background: var(--body-bg);
+            transition: background-color 0.3s ease;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+        }
+
+        a,
+        a:visited {
+            color: var(--link-color);
+        }
+
+        /* a:hover {
+        color: var(--link-color);
+        opacity: 0.8;  
+    } */
+
+        .pub-note.highlight {
+            background: #332900;
+            color: #ffd700;
+            border-color: #665200;
+        }
+
+        /* .pub-note.award {
+        background: #003311;
+        color: #00cc66;
+        border-color: #006633;
+    } */
+
+
+        .theme-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            background: var(--container-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container scroll-animation">
+        <h2>
+            <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./publications.html">Publications</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            
+            <!-- &middot;&nbsp; -->
+            <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
+            <a href="./team.html">Team</a>&nbsp;&nbsp;&middot;&nbsp;
+            <a href="./services.html">Services</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./awards.html">Awards</a> -->
+
+        </h2>
+    </div>
+
+    <div class="container scroll-animation">
+        <div id="sidebar">
+            <img src="./assets/images/me.jpg" width="225" id="me" itemprop="photo" alt="Xiao tong">
+        </div>
+        <div id="bio">
+
+            <br>
+
+            <h1>
+                <span class="mono_font" itemprop="name">Xiao Tong </span>
+            </h1>
+
+            <br>
+
+            <p style="line-height:23px;">
+                Ph.D. Student
+                <br>
+                <br>
+                School of Information and Communications Engineering
+                <br>
+                <br>
+                Xi'an Jiaotong University
+                <br>
+                <br>
+                Email: xiao.tong.2023@stu.xjtu.edu.cn
+                <br>
+            </p>
+            <p class="external">
+                <a href="https://scholar.google.com.hk/citations?user=lngMcNQAAAAJ&hl=zh-CN" class="first">Google Scholar</a>
+                <a href="https://github.com/TongXiao2026">GitHub</a>
+                <a href="https://www.researchgate.net/profile/Xiao-Tong-7?ev=hdr_xprf">Research Gate</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container scroll-animation">
+        <h2 class="mono_font">Short Bio</h2>
+        <p style="text-align:justify;">
+
+            I received the B.Eng. degree and the M.Eng. degree from 
+            <a href="https://www.hrbeu.edu.cn/">Harbin Engineering University (HEU)</a>, China.
+
+            I am currently pursuing the Ph.D. degree with the School of Information and Communications Engineering, <a href="https://www.xjtu.edu.cn/">Xi'an Jiaotong University (XJTU)</a>, China,
+            advised by <a href="https://faculty.xjtu.edu.cn/lei.lei/">Prof. Lei Lei</a> and <a href="https://faculty.xjtu.edu.cn/ang-li/zh_CN/index.htm">Prof. Ang Li</a>.
+            <br><br>
+            My research interests include constructive interference exploitation, symbol-level and block-level precoding, integrated sensing and communications (ISAC), 
+                signal processing, and MIMO wireless communications.
+
+        </p>
+    </div>
+
+    <div class="container scroll-animation">
+        <h2 class="mono_font">News </h2>
+
+        <table style="width:100%; border-spacing: 0px 10px;">
+            <tr>
+                <td class="date mono_font">[2023-09]</td>
+                <td>
+                    Started my Ph.D. studies at Xi'an Jiaotong University, China.
+                </td>
+            </tr>
+           
+        </table>
+    </div>
+
+
+    <div class="container scroll-animation" style="text-align: center;">
+        <p style="font-size: 14px;">
+            &copy; 2026 Xiao Tong. All rights reserved.
+            <br>
+            Page template inspired by <a href="https://zhaolin820.github.io/" target="_blank" rel="noopener noreferrer">Zhaolin Wang</a>.
+        </p>
+    </div>
+
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+</body>
+
+</html>
